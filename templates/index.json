@@ -80,14 +80,14 @@
       "name": "Scrolling text",
       "settings": {
         "full_width": true,
-        "text": "Wear the future, live the moment.",
+        "text": "Look Better. Feel Better. Shine Brighter.",
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 10,
-        "background": "#1a1a1a",
+        "background": "#D0CFCD",
         "background_gradient": "",
-        "text_color": "#f0f0f0",
+        "text_color": "#111111",
         "text_gradient": ""
       }
     },
@@ -97,7 +97,7 @@
         "heading_aEw9Mn": {
           "type": "heading",
           "settings": {
-            "text": "At Wearable",
+            "text": "At MEYN",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -106,7 +106,7 @@
         "richtext_NPgcHm": {
           "type": "richtext",
           "settings": {
-            "content": "<p><br/>we bring you the latest wearable technology designed to fit your lifestyle. From smartwatches and fitness trackers to wireless accessories, our goal is to combine style, comfort, and innovation in every product. We’re committed to offering high-quality wearables, great prices, and excellent customer service to help you stay connected, active, and ahead of the trend.<br/><br/></p>"
+            "content": "<p>, we believe beauty should be simple, effective, and affordable. That's why we carefully select innovative beauty gadgets that help you look and feel your best from the comfort of your home.</p><p>From our <strong>Heated Eyelash Curler with Eyebrow Trimmer</strong> to our <strong>K5 Pro LED Selfie Ring Light</strong>, every product is designed to make your daily routine easier, faster, and more enjoyable. We focus on practical beauty solutions that deliver real results without the high salon cost.</p>"
           }
         }
       },
@@ -129,14 +129,14 @@
       "name": "Scrolling text",
       "settings": {
         "full_width": true,
-        "text": "Delivery All Over Lebanon",
+        "text": "Professional Results Without the Salon Price.",
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 10,
-        "background": "#1a1a1a",
+        "background": "#D0CFCD",
         "background_gradient": "",
-        "text_color": "#f0f0f0",
+        "text_color": "#111111",
         "text_gradient": ""
       }
     },
