@@ -41,13 +41,13 @@
         "liquid_PpwKpe": {
           "type": "liquid",
           "settings": {
-            "liquid": "<section class=\"sale-timer\" aria-label=\"Sale countdown timer\">\n  <style>\n    .sale-timer{\n      width:100%;\n      padding:22px 12px;\n      display:flex;\n      justify-content:center;\n      background:##ff85d0;\n      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n    }\n    .sale-timer__wrap{\n      text-align:center;\n    }\n    .sale-timer__label{\n      font-size:24px;\n      font-weight:500;\n      color:#111;\n      margin:0 0 14px 0;\n      line-height:1.1;\n    }\n\n    .sale-timer__row{\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      gap:10px;\n    }\n\n    .sale-timer__box{\n      width:88px;\n      height:68px;\n      background:#111;\n      color:#fff;\n      border-radius:6px;\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      font-size:34px;\n      font-weight:700;\n      letter-spacing:1px;\n      font-variant-numeric: tabular-nums;\n    }\n\n    .sale-timer__colon{\n      font-size:32px;\n      font-weight:700;\n      color:#ff2a2a;\n      line-height:1;\n      transform: translateY(-1px);\n      user-select:none;\n    }\n\n    @media (max-width:420px){\n      .sale-timer__label{ font-size:20px; }\n      .sale-timer__box{ width:72px; height:58px; font-size:30px; }\n      .sale-timer__colon{ font-size:28px; }\n      .sale-timer__row{ gap:8px; }\n    }\n  </style>\n\n  <div class=\"sale-timer__wrap\">\n    <div class=\"sale-timer__label\">Hurry! Sale ends in</div>\n\n    <div class=\"sale-timer__row\" role=\"timer\" aria-live=\"polite\">\n      <div class=\"sale-timer__box\" id=\"st-hours\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-mins\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-secs\">00</div>\n    </div>\n  </div>\n\n  <script>\n    (function () {\n      const durationHours = 12; // change if needed\n      const endAt = Date.now() + durationHours * 60 * 60 * 1000;\n\n      const h = document.getElementById(\"st-hours\");\n      const m = document.getElementById(\"st-mins\");\n      const s = document.getElementById(\"st-secs\");\n\n      const pad = n => String(n).padStart(2, \"0\");\n\n      function update(){\n        let diff = endAt - Date.now();\n        if(diff < 0) diff = 0;\n\n        const total = Math.floor(diff / 1000);\n        h.textContent = pad(Math.floor(total / 3600));\n        m.textContent = pad(Math.floor((total % 3600) / 60));\n        s.textContent = pad(total % 60);\n\n        if(diff === 0) clearInterval(timer);\n      }\n\n      update();\n      const timer = setInterval(update, 1000);\n    })();\n  </script>\n</section>"
+            "liquid": "<section class=\"sale-timer\" aria-label=\"Sale countdown timer\">\n  <style>\n    .sale-timer{\n      width:100%;\n      padding:22px 12px;\n      display:flex;\n      justify-content:center;\n      background:##ff85d0;\n      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n    }\n    .sale-timer__wrap{\n      text-align:center;\n    }\n    .sale-timer__label{\n      font-size:24px;\n      font-weight:500;\n      color:#111;\n      margin:0 0 14px 0;\n      line-height:1.1;\n    }\n\n    .sale-timer__row{\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      gap:10px;\n    }\n\n    .sale-timer__box{\n      width:88px;\n      height:68px;\n      background:#d0cfcd;\n      color:#fff;\n      border-radius:6px;\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      font-size:34px;\n      font-weight:700;\n      letter-spacing:1px;\n      font-variant-numeric: tabular-nums;\n    }\n\n    .sale-timer__colon{\n      font-size:32px;\n      font-weight:700;\n      color:#ff2a2a;\n      line-height:1;\n      transform: translateY(-1px);\n      user-select:none;\n    }\n\n    @media (max-width:420px){\n      .sale-timer__label{ font-size:20px; }\n      .sale-timer__box{ width:72px; height:58px; font-size:30px; }\n      .sale-timer__colon{ font-size:28px; }\n      .sale-timer__row{ gap:8px; }\n    }\n  </style>\n\n  <div class=\"sale-timer__wrap\">\n    <div class=\"sale-timer__label\">Hurry! Sale ends in</div>\n\n    <div class=\"sale-timer__row\" role=\"timer\" aria-live=\"polite\">\n      <div class=\"sale-timer__box\" id=\"st-hours\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-mins\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-secs\">00</div>\n    </div>\n  </div>\n\n  <script>\n    (function () {\n      const durationHours = 12; // change if needed\n      const endAt = Date.now() + durationHours * 60 * 60 * 1000;\n\n      const h = document.getElementById(\"st-hours\");\n      const m = document.getElementById(\"st-mins\");\n      const s = document.getElementById(\"st-secs\");\n\n      const pad = n => String(n).padStart(2, \"0\");\n\n      function update(){\n        let diff = endAt - Date.now();\n        if(diff < 0) diff = 0;\n\n        const total = Math.floor(diff / 1000);\n        h.textContent = pad(Math.floor(total / 3600));\n        m.textContent = pad(Math.floor((total % 3600) / 60));\n        s.textContent = pad(total % 60);\n\n        if(diff === 0) clearInterval(timer);\n      }\n\n      update();\n      const timer = setInterval(update, 1000);\n    })();\n  </script>\n</section>"
           }
         },
         "liquid_8BBykj": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">🕶️ Adjustable Tint Technology</span> – Easily adapt your lenses to different lighting conditions for maximum comfort and visibility.<br><br>\n\n<span style=\"font-weight: bold;\">☀️ UV400 Sun Protection</span> – Protect your eyes from harmful UV rays and reduce glare while outdoors.<br><br>\n\n<span style=\"font-weight: bold;\">✨ Stylish & Durable Design</span> – Premium aluminum alloy frame with a modern luxury look made for everyday wear.\n</div>"
+            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">💡 5 Lighting Modes</span> – Switch between different light settings to get the perfect glow for selfies, videos, makeup, and live streams.<br><br>\n\n<span style=\"font-weight: bold;\">🔋 Rechargeable & Portable</span> – Built-in rechargeable battery makes it easy to use anywhere without constantly buying batteries.<br><br>\n\n<span style=\"font-weight: bold;\">📱 Perfect for Content Creation</span> – Clip it to your phone and enjoy brighter photos, clearer videos, and a professional look anytime.\n</div>"
           }
         },
         "rating": {
@@ -153,11 +153,11 @@
         "item_pUAUTj": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/1778583924_1778504886_phpjds3spplhjvj7b99UY0.jpg",
+            "image": "shopify://shop_images/1761861028_phpv45jr3vvgsltcvcdToY.jpg",
             "icon": "none",
             "icon_width": 48,
-            "title": "Adjustable Tint Technology",
-            "content": "<p>Experience clear vision in every environment with lenses that adapt to changing light conditions for maximum comfort.</p><h3></h3>"
+            "title": "Perfect Lighting Anywhere, Anytime",
+            "content": "<p>Never worry about dark or blurry photos again. The K5 Pro LED Ring Light provides bright, flattering illumination with 5 adjustable lighting modes, helping you capture stunning selfies, create professional-looking content, and look your best on every video call.</p><h3></h3>"
           }
         }
       },
@@ -194,65 +194,8 @@
         "text_gradient": ""
       }
     },
-    "images_with_text_scrolling_HnL6DC": {
-      "type": "images-with-text-scrolling",
-      "blocks": {
-        "item_7ffkaP": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/1778583924_1778504885_phpfgmj8mc5b8s41kCl6gP.jpg",
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Premium Style & Protection",
-            "content": "<p>Designed with a durable aluminum frame and UV400 protection to keep you stylish while protecting your eyes outdoors.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_7ffkaP"
-      ],
-      "name": "Images and text scrolling",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "show_counter": true,
-        "desktop_image_effect": "reveal",
-        "image_position": "start",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "slideshow_Pk7FBg": {
       "type": "slideshow",
-      "blocks": {
-        "image_JgDLTQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1778583924_6c2088429968ff412a937e8d513d68821b87554c.gif",
-            "content_max_width": 400,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 21,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_JgDLTQ"
-      ],
       "name": "Slideshow",
       "settings": {
         "full_width": true,
@@ -267,35 +210,48 @@
         "background_gradient": ""
       }
     },
+    "custom_liquid_xBVBTT": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n.compare-table{\nwidth:100%;\nborder-collapse:collapse;\nfont-size:15px;\nmargin:20px 0;\nborder-radius:12px;\noverflow:hidden;\n}\n.compare-table th{\nbackground:#111;\ncolor:#fff;\npadding:14px;\ntext-align:center;\n}\n.compare-table td{\npadding:12px;\nborder-bottom:1px solid #eee;\ntext-align:center;\n}\n.compare-table tr:nth-child(even){\nbackground:#f9f9f9;\n}\n</style>\n\n<table class=\"compare-table\">\n<tr>\n<th>Features</th>\n<th>K5 Pro Ring Light</th>\n<th>Others</th>\n</tr>\n\n<tr>\n<td>5 Lighting Modes</td>\n<td>✅ Yes</td>\n<td>❌ No</td>\n</tr>\n\n<tr>\n<td>Rechargeable Battery</td>\n<td>✅ Yes</td>\n<td>❌ No</td>\n</tr>\n\n<tr>\n<td>Portable & Lightweight</td>\n<td>✅ Yes</td>\n<td>❌ No</td>\n</tr>\n\n<tr>\n<td>Perfect for Selfies & Videos</td>\n<td>✅ Yes</td>\n<td>❌ No</td>\n</tr>\n\n<tr>\n<td>Clip-On Phone Design</td>\n<td>✅ Yes</td>\n<td>❌ No</td>\n</tr>\n\n<tr>\n<td>Adjustable Brightness</td>\n<td>✅ Yes</td>\n<td>❌ No</td>\n</tr>\n\n<tr>\n<td>Professional Looking Results</td>\n<td>✅ Yes</td>\n<td>❌ No</td>\n</tr>\n\n<tr>\n<td>Easy USB Charging</td>\n<td>✅ Yes</td>\n<td>❌ No</td>\n</tr>\n</table>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "faq_hnHpnX": {
       "type": "faq",
       "blocks": {
         "item_Wg8g8E": {
           "type": "item",
           "settings": {
-            "title": "How does the adjustable tint work?",
-            "content": "<p><br/>The lenses adapt to different lighting conditions, helping reduce glare and improve visibility outdoors.<br/></p>"
+            "title": "How many lighting modes does the K5 Pro have?",
+            "content": "<p><br/>The K5 Pro features 5 different lighting modes, allowing you to choose the perfect brightness for any situation.<br/><br/></p>"
           }
         },
         "item_8yizQD": {
           "type": "item",
           "settings": {
-            "title": "Are the sunglasses suitable for both men and women?",
-            "content": "<p><br/>Yes, the modern round design is made to suit both men and women.<br/><br/></p>"
+            "title": "Is the K5 Pro rechargeable?",
+            "content": "<p><br/>Yes! It comes with a built-in rechargeable battery and can be easily charged using the included USB cable.<br/><br/></p>"
           }
         },
         "item_Apj6NA": {
           "type": "item",
           "settings": {
-            "title": "Do these sunglasses provide UV protection?",
-            "content": "<p><br/>Yes, the sunglasses offer UV400 protection against harmful sun rays.<br/><br/></p>"
+            "title": "Can I use it for video calls and online meetings?",
+            "content": "<p><br/>Absolutely. The K5 Pro provides bright, even lighting that helps you look clearer and more professional during video calls.<br/><br/></p>"
           }
         },
         "item_tK9h6f": {
           "type": "item",
           "settings": {
-            "title": "What material is the frame made from?",
-            "content": "<p>The frame is made from durable aluminum alloy for long-lasting comfort and strength.</p>"
+            "title": "Does it fit all smartphones?",
+            "content": "<p><br/>Yes, the clip-on design is compatible with most smartphones and tablets.<br/><br/></p>"
           }
         }
       },
@@ -328,6 +284,31 @@
         "accordion_text_color": ""
       }
     },
+    "17815655237fa7dc2c": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_tNRArk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_tNRArk"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "17789057653ac76002": {
       "type": "apps",
       "settings": {
@@ -345,9 +326,10 @@
     "scrolling_text_pNPfzg",
     "images_with_text_scrolling_Ane7LP",
     "scrolling_text_qBXBG4",
-    "images_with_text_scrolling_HnL6DC",
     "slideshow_Pk7FBg",
+    "custom_liquid_xBVBTT",
     "faq_hnHpnX",
+    "17815655237fa7dc2c",
     "17789057653ac76002"
   ]
 }
