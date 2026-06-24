@@ -15,7 +15,7 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1780948605_9fd1ff27-9bcb-4dc3-a966-3f68e9546cc5_2.jpg",
+            "image": "shopify://shop_images/WhatsApp_Image_2026-06-19_at_10.02.44_PM.jpg",
             "content_max_width": 400,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -85,7 +85,7 @@
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 10,
-        "background": "#D0CFCD",
+        "background": "#d0cfcd",
         "background_gradient": "",
         "text_color": "#111111",
         "text_gradient": ""
@@ -134,7 +134,7 @@
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 10,
-        "background": "#D0CFCD",
+        "background": "#d0cfcd",
         "background_gradient": "",
         "text_color": "#111111",
         "text_gradient": ""
